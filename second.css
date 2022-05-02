@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #fffae2;
+  --secondary-color: #c49345;
+  --navbar: black;
+}
+
+.navbar a {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: var(--secondary-color);
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(196,147,69, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(196, 147, 69);
+}
+
+.navbar {
+  background-color: var(--navbar);
+  height: auto;
+  padding: 10px;
+}
+
+.navbar ul {
+  margin-right: 50px;
+}
+
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+}
+
+.nav-item {
+  margin-right: 30px;
+}
+
+/* navbar */
+
+.nav-item a {
+  color: var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+.nav-item a:hover {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.navbar ul {
+  margin-right: 50px;
+}
+
+.current {
+  color: var(--secondary-color);
+}
+
+.navbar-brand img {
+  margin-right: 7px;
+  width: 23px;
+  color: #c49345;
+}
+
+/* coaching pictures */
+
+.Individual_Cover {
+  margin-top: 5vh;
+  height: 75vh;
+  background: url("Individual_Coaching.jpg") no-repeat center center/cover;
+}
+
+.group_cover {
+  margin-top: 5vh;
+  height: 75vh;
+  background: url("Group_Coaching.jpg") no-repeat center center/cover;
+}
+
+.maxwell_cover {
+  margin-top: 5vh;
+  height: 75vh;
+  background: url("Maxwell_DISC_Workshop.jpg") no-repeat center center/cover;
+}
+
+/* trainig pictures */
+
+.Personal_growth_cover {
+  margin-top: 5vh;
+  height: 75vh;
+  background: url("Personal\ Growth\ 15laws.jpg") no-repeat center center/cover;
+}
+
+.Laws_of_Leadership_cover {
+  margin-top: 5vh;
+  height: 75vh;
+  object-fit: scale-down;
+  /* background: url("Leadership\ Development.jpg") no-repeat center center/cover; */
+  background-color: red;
+  position: relative;
+}
+
+.photto {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.Leadership_Game_cover {
+  margin-top: 5vh;
+  height: 75vh;
+  background: url("Leadership\ Game.jpg") no-repeat center center/cover;
+}
+
+.Speaker_Training_cover {
+  margin-top: 5vh;
+  height: 75vh;
+  background: url("Speaker\ Training.jpg") no-repeat center center/cover;
+}
+
+/* small business */
+
+.Small_Business_cover {
+  margin-top: 10vh;
+  height: 100vh;
+  background: url("Speaker\ Training.jpg") no-repeat center center/cover;
+}
+
+.Strategic_Consulting_cover {
+  margin-top: 5vh;
+  height: 75vh;
+  background: url("Strategic_Consulting.jpg") no-repeat center center/cover;
+}
+
+.Business_Process_cover {
+  margin-top: 5vh;
+  height: 75vh;
+  background: url("Business\ Process\ Improvement.jpg") no-repeat center
+    center/cover;
+}
+
+.Organizational_Development_cover {
+  margin-top: 5vh;
+  height: 75vh;
+  background: url("Organisational\ Development\ Consulting.jpg") no-repeat
+    center center/cover;
+}
+
+.Small_Business_Consulting_cover {
+  margin-top: 5vh;
+  height: 75vh;
+  background: url("Small\ Business\ Consulting.jpg") no-repeat center
+    center/cover;
+}
+
+/* info */
+
+.back {
+  background-color: var(--primary-color);
+  padding: 15px 100px 1px 100px;
+}
+
+.back p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+}
+
+.back h1 {
+  padding-bottom: 20px;
+  color: var(--secondary-color);
+  font-family: "Playfair Display", serif;
+  line-height: 60px;
+  font-weight: 600;
+  font-size: 50px;
+}
+/* cards */
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.button {
+  margin-top: 80px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.btn {
+  width: 350px;
+  padding: 15px 10px;
+  border-radius: 30px;
+  text-align: center;
+  background-color: var(--secondary-color);
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: bolder;
+  box-shadow: 2px 2px 8px rgb(1, 1, 44);
+}
+
+.bb {
+  padding: 30px 20px;
+}
+
+span {
+  font-weight: bold;
+}
+
+/* footer */
+.testts {
+  line-height: 30px;
+  text-align: center;
+}
+
+.text-white a {
+  text-decoration: none;
+}
+
+footer {
+  line-height: 1.7rem;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: auto;
+    padding: 5px;
+  }
+  .box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+  }
+
+  .image {
+    margin: 10px;
+  }
+
+  .back {
+    padding: 15px 20px 1px 20px;
+  }
+
+  .back p {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+
+  .back h1 {
+    padding-bottom: 20px;
+    line-height: 50px;
+    font-size: 40px;
+  }
+
+  .button {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: block;
+  }
+
+  .btn {
+    width: 250px;
+    font-size: 12px;
+    margin: 10px;
+  }
+
+  .bb {
+    padding: 25px 20px;
+  }
+
+  .mob {
+    margin-top: 5vh;
+    height: 30vh;
+  }
+}
+
+/* tablet */
+
+@media screen and (min-device-width: 600px) and (max-device-width: 992px) {
+  .mob {
+    margin-top: 4vh;
+    height: 40vh;
+  }
+
+  .back {
+    padding: 15px 50px 1px 50px;
+  }
+
+  .back p {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+
+  .back h1 {
+    padding-bottom: 20px;
+    line-height: 50px;
+    font-size: 40px;
+  }
+
+  .button {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: block;
+  }
+
+  .btn {
+    width: 300px;
+    font-size: 12px;
+    margin: 10px;
+  }
+
+  .bb {
+    padding: 25px 20px;
+  }
+}

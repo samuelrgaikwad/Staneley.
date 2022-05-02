@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #fffae2;
+  --secondary-color: #c49345;
+  --navbar: black;
+}
+
+/* navbar */
+.navbar a {
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: var(--secondary-color);
+}
+
+/* .navbar-toggler-icon {
+  color: rebeccapurple;
+  background-color: gray;
+}
+
+button .navbar-toggler .collapse {
+  color: red;
+  color: -internal-light-dark(red, yellow);
+} */
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(196,147,69, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(196, 147, 69);
+}
+
+.navbar {
+  background-color: var(--navbar);
+  height: auto;
+  padding: 10px;
+}
+
+.navbar ul {
+  margin-right: 50px;
+}
+
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+}
+
+.nav-item {
+  margin-right: 30px;
+}
+
+.nav-item a {
+  color: var(--primary-color);
+  transition: all 0.2s ease-in-out;
+}
+.nav-item a:hover {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.current {
+  color: var(--secondary-color);
+}
+
+.navbar-brand img {
+  margin-right: 7px;
+  width: 23px;
+  color: #c49345;
+}
+/* covers  */
+
+.homepage_cover {
+  margin-top: 10vh;
+  height: 100vh;
+  background: url("homepage-landing\ image\ \(2\).jpg") no-repeat center
+    center/cover;
+  background-size: 100% 100%;
+}
+
+.coaching_cover {
+  margin-top: 2vh;
+  height: 84vh;
+  background: url("COACHING.jpg") no-repeat center center/cover;
+  background-size: 100% 100%;
+}
+
+.Training_cover {
+  height: 80vh;
+  background: url("TRAINING.jpg") no-repeat center center/cover;
+  background-size: 100% 100%;
+}
+
+.Small_Business_cover {
+  height: 80vh;
+  width: 100%;
+  background: url("1.png") no-repeat center center/cover;
+}
+
+/* about part in the home page  */
+
+.about_us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-sizing: border-box;
+}
+
+/* section 2  */
+
+.section_2 {
+  background-color: var(--primary-color);
+  padding: 12px 100px 100px 100px;
+}
+.section_2 h1 {
+  padding: 5px 15px 5px 0px;
+  color: var(--secondary-color);
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: 3px;
+}
+
+.section_2 p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.03em;
+}
+
+.section_2 ul li {
+  font-size: 18px;
+  font-family: "Lato";
+  font-weight: 800;
+}
+
+/* cards  */
+
+.card {
+  background-color: rgb(0, 0, 67);
+  margin-top: 40px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 15px rgb(1, 1, 44);
+  color: var(--primary-color);
+}
+
+/* coaching card images */
+.img_one {
+  background: rgba(0, 0, 0, 0.7) url("Individual_Coaching.jpg") no-repeat center
+    center/cover;
+  background-blend-mode: darken;
+}
+.img_two {
+  background: rgba(0, 0, 0, 0.7) url("Group_Coaching.jpg") no-repeat center
+    center/cover;
+  background-blend-mode: darken;
+}
+.img_three {
+  background: rgba(0, 0, 0, 0.7) url("Maxwell_DISC_Workshop.jpg") no-repeat
+    center center/cover;
+  background-blend-mode: darken;
+}
+
+/* training card images  */
+
+.training_card_img_1 {
+  background: rgba(0, 0, 0, 0.7) url("Personal\ Growth\ 15laws.jpg") no-repeat
+    center center/cover;
+  background-blend-mode: darken;
+}
+
+.training_card_img_2 {
+  background: rgba(0, 0, 0, 0.7) url("Leadership\ Development.jpg") no-repeat
+    center center/cover;
+  background-blend-mode: darken;
+}
+
+.training_card_img_3 {
+  background: rgba(0, 0, 0, 0.7) url("Leadership\ Game.jpg") no-repeat center
+    center/cover;
+  background-blend-mode: darken;
+}
+
+.training_card_img_4 {
+  background: rgba(0, 0, 0, 0.7) url("Speaker\ Training.jpg") no-repeat center
+    center/cover;
+  background-blend-mode: darken;
+}
+
+/* small business card images  */
+
+.Business_Consulting_img_1 {
+  background: rgba(0, 0, 0, 0.7) url("Strategic_Consulting.jpg") no-repeat
+    center center/cover;
+  background-blend-mode: darken;
+}
+
+.Business_Consulting_img_2 {
+  background: rgba(0, 0, 0, 0.7) url("Business\ Process\ Improvement.jpg")
+    no-repeat center center/cover;
+  background-blend-mode: darken;
+}
+
+.Business_Consulting_img_3 {
+  background: rgba(0, 0, 0, 0.7)
+    url("Organisational\ Development\ Consulting.jpg") no-repeat center
+    center/cover;
+  background-blend-mode: darken;
+}
+
+.Business_Consulting_img_4 {
+  background: rgba(0, 0, 0, 0.7) url("Small\ Business\ Consulting.jpg")
+    no-repeat center center/cover;
+  background-blend-mode: darken;
+}
+
+/* cards  */
+
+.card-title {
+  font-size: 25px;
+  padding-bottom: 5px;
+  padding-top: 20px;
+  font-weight: bolder;
+}
+
+.btn {
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+  width: 150px;
+  border-radius: 50px;
+  margin-top: 10px;
+  letter-spacing: 2px;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  border: 2px solid var(--secondary-color);
+}
+
+.box-text {
+  text-align: start;
+  font-size: 10px;
+}
+
+.card-body {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body p {
+  font-size: 15px;
+}
+
+/*ABOUT ---- ABOUT  */
+
+#contact {
+  background-color: var(--primary-color);
+}
+.contact_part {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 70px 90px 100px 100px;
+}
+
+.photo {
+  width: 510px;
+  height: 490px;
+  object-fit: cover;
+  border-radius: 30px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+/* contact */
+
+.contact_me h1 {
+  color: white;
+  text-align: center;
+  color: var(--secondary-color);
+  text-align: left;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: 3px;
+}
+.contact_me p {
+  color: var(--secondary-color);
+  text-align: start;
+  margin: 0;
+  padding-bottom: 10px;
+  line-height: 18px;
+}
+
+.form-group {
+  padding-right: 15px;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  line-height: 30px;
+}
+
+.form-control {
+  border: 2px solid var(--secondary-color);
+  background-color: transparent;
+  border-radius: 15px;
+  color: var(--secondary-color);
+}
+
+.button {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 30px;
+  border: none;
+  padding: 7px 20px;
+  margin: 10px;
+}
+
+/* boxes in the main services page  */
+
+.big_box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px;
+  border-radius: 20px;
+
+  align-items: center;
+}
+
+.box-body {
+  color: var(--primary-color);
+  position: relative;
+}
+
+.box {
+  background: rgba(0, 0, 0, 0.7)
+    url("https://media.istockphoto.com/photos/bule-water-drops-texture-picture-id817606292?b=1&k=20&m=817606292&s=170667a&w=0&h=pjeOL4WoAaMNpvOhMGWhwRA1ghozRAxzpPuNWbEbRqs=");
+  background-blend-mode: darken;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgb(1, 1, 44);
+  height: 400px;
+  padding: 40px;
+  margin: 20px;
+  position: relative;
+}
+
+.box-title {
+  font-weight: bolder;
+  padding: 10px;
+  padding-bottom: 20px;
+  text-align: start;
+  font-size: 1.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+.box a {
+  display: inline-block;
+  margin-top: auto;
+  align-self: flex-start;
+  position: absolute;
+}
+
+/* span footer */
+
+span {
+  font-weight: bold;
+}
+
+/* footer */
+.testts {
+  line-height: 30px;
+  text-align: center;
+}
+
+.text-white a {
+  text-decoration: none;
+}
+
+footer {
+  line-height: 1.7rem;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: auto;
+    padding: 5px;
+  }
+
+  .section_2 {
+    padding: 15px 20px 50px 20px;
+  }
+  .card {
+    height: 240px;
+  }
+
+  .card-title {
+    font-size: 23px;
+    padding-top: 10px;
+  }
+
+  .card-body {
+    margin-left: 10px;
+  }
+
+  .card-body p {
+    font-size: 15px;
+  }
+
+  .btn {
+    margin-top: 10px;
+  }
+
+  .special {
+    font-size: 21px;
+  }
+
+  .section_2 h1 {
+    padding-bottom: 20px;
+    line-height: 50px;
+    font-size: 40px;
+  }
+
+  .section_2 p {
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+  }
+
+  .mob {
+    height: 40vh;
+  }
+  .coaching_cover {
+    margin-top: 6vh;
+  }
+
+  .contact_part {
+    padding: 80px 20px 50px 20px;
+    display: block;
+  }
+
+  .photo {
+    display: none;
+  }
+
+  .contact_me h1 {
+    font-size: 35px;
+    letter-spacing: 1px;
+  }
+  .contact_me p {
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-device-width: 600px) and (max-device-width: 992px) {
+  .contact_part {
+    padding: 80px 20px 50px 20px;
+  }
+
+  .photo {
+    width: 400px;
+    height: 100%;
+    margin-top: 0px;
+  }
+
+  .contact_me h1 {
+    font-size: 40px;
+    letter-spacing: 1px;
+  }
+
+  .section_2 {
+    padding: 20px 50px 50px 50px;
+  }
+
+  .mob {
+    height: 50vh;
+  }
+}
